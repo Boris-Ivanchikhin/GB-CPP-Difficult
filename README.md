@@ -1,2 +1,5 @@
-# GB-CPP-Difficult
-C++: difficult moments
+#### C++: сложные моменты / C++: difficult moments  
+
+***
+
+source code in c++
