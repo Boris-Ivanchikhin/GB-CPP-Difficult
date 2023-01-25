@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package lesson07;
+
+message Student {
+
+  message FullName {
+    string firstName = 1;
+    string lastName = 2;
+    optional string patronymic = 3;
+  }
+
+  FullName FIO = 1;
+  repeated uint32 grades = 2 [packed = true];
+  float avgGrade = 3;
+}
+
+message StudentsGroup {
+  repeated Student students = 1;
+}

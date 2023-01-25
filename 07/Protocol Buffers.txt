@@ -1,0 +1,31 @@
+**************************
+
+Protocol Buffers - Google's data interchange format
+
+**************************
+
+Запустить "MSYS2 MSYS" из меню "Пуск", далее обновить базовые пакеты:
+1) pacman -Syu
+2) pacman -S --needed base-devel mingw-w64-x86_64-toolchain
+3) После этого нужно закрыть все оболочки MSYS2, а затем запустить autorebase.bat в корневом каталоге MSYS2.
+
+Установить поддержку Google protobuf в MSYS2(MinGW):
+pacman -S mingw-w64-x86_64-protobuf
+
+https://stackoverflow.com/questions/9243816/how-to-build-googles-protobuf-in-windows-using-mingw
+
+**************************
+
+g++ -I "C:\msys64\mingw64\include\google\protobuf" "*.cpp" "*.cc" -o "07.exe" -L "C:\msys64\mingw64\lib" -lprotobuf -pthread
+
+**************************
+
+Разбор Protobuf в Visual Studio под С++
+https://habr.com/ru/post/645505/
+
+**************************
+
+Руководство по языку (прото3):
+https://developers.google.com/protocol-buffers/docs/proto3
+
+**************************
